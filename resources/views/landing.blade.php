@@ -78,7 +78,7 @@ if (isset($_POST['upload'])) {
         move_uploaded_file($file,$targetFile);
         $fileToUpload = "upload/".$files.".".$imageFileType;
         $content = fopen($fileToUpload,"r");
-        $blobClient->createBlockBlob($container, $fileToUpload, $content);
+        $blobClient->createBlockBlob($container, $file, $content);
     }
 
 }

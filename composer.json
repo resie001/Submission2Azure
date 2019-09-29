@@ -12,10 +12,7 @@
         "fideloper/proxy": "^4.0",
         "laravel/framework": "^6.0",
         "laravel/tinker": "^1.0",
-        "microsoft/azure-storage-blob": "*",
-        "microsoft/azure-storage-table": "*",
-        "microsoft/azure-storage-queue": "*",
-        "microsoft/azure-storage-file": "*"
+        "microsoft/windowsazure": "^0.5"
     },
     "require-dev": {
         "facade/ignition": "^1.4",
