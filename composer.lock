@@ -4,8 +4,44 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ad67b793106a40077c9efe40daeb236b",
+    "content-hash": "e3ca57da47a8f5cc583ce6a31f373749",
     "packages": [
+        {
+            "name": "container-interop/container-interop",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/container-interop/container-interop.git",
+                "reference": "79cbf1341c22ec75643d841642dd5d6acd83bdb8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/container-interop/container-interop/zipball/79cbf1341c22ec75643d841642dd5d6acd83bdb8",
+                "reference": "79cbf1341c22ec75643d841642dd5d6acd83bdb8",
+                "shasum": ""
+            },
+            "require": {
+                "psr/container": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Interop\\Container\\": "src/Interop/Container/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
+            "homepage": "https://github.com/container-interop/container-interop",
+            "support": {
+                "issues": "https://github.com/container-interop/container-interop/issues",
+                "source": "https://github.com/container-interop/container-interop/tree/master"
+            },
+            "abandoned": "psr/container",
+            "time": "2017-02-14T19:40:03+00:00"
+        },
         {
             "name": "dnoegel/php-xdg-base-dir",
             "version": "0.1",
@@ -381,28 +417,77 @@
             "time": "2019-09-03T16:45:42+00:00"
         },
         {
-            "name": "guzzlehttp/guzzle",
-            "version": "6.3.3",
+            "name": "firebase/php-jwt",
+            "version": "v4.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "407b0cb880ace85c9b63c5f9551db498cb2d50ba"
+                "url": "https://github.com/firebase/php-jwt.git",
+                "reference": "dccf163dc8ed7ed6a00afc06c51ee5186a428d35"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/407b0cb880ace85c9b63c5f9551db498cb2d50ba",
-                "reference": "407b0cb880ace85c9b63c5f9551db498cb2d50ba",
+                "url": "https://api.github.com/repos/firebase/php-jwt/zipball/dccf163dc8ed7ed6a00afc06c51ee5186a428d35",
+                "reference": "dccf163dc8ed7ed6a00afc06c51ee5186a428d35",
                 "shasum": ""
             },
             "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Firebase\\JWT\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Neuman Vong",
+                    "email": "neuman+pear@twilio.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Anant Narayanan",
+                    "email": "anant@php.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple library to encode and decode JSON Web Tokens (JWT) in PHP. Should conform to the current spec.",
+            "homepage": "https://github.com/firebase/php-jwt",
+            "support": {
+                "issues": "https://github.com/firebase/php-jwt/issues",
+                "source": "https://github.com/firebase/php-jwt/tree/v4.0.0"
+            },
+            "time": "2016-07-18T04:51:16+00:00"
+        },
+        {
+            "name": "guzzlehttp/guzzle",
+            "version": "6.5.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/guzzle.git",
+                "reference": "a52f0440530b54fa079ce76e8c5d196a42cad981"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/a52f0440530b54fa079ce76e8c5d196a42cad981",
+                "reference": "a52f0440530b54fa079ce76e8c5d196a42cad981",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
                 "guzzlehttp/promises": "^1.0",
-                "guzzlehttp/psr7": "^1.4",
-                "php": ">=5.5"
+                "guzzlehttp/psr7": "^1.9",
+                "php": ">=5.5",
+                "symfony/polyfill-intl-idn": "^1.17"
             },
             "require-dev": {
                 "ext-curl": "*",
                 "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.4 || ^7.0",
-                "psr/log": "^1.0"
+                "psr/log": "^1.1"
             },
             "suggest": {
                 "psr/log": "Required for using the Log middleware"
@@ -410,7 +495,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "6.3-dev"
+                    "dev-master": "6.5-dev"
                 }
             },
             "autoload": {
@@ -427,9 +512,39 @@
             ],
             "authors": [
                 {
+                    "name": "Graham Campbell",
+                    "email": "hello@gjcampbell.co.uk",
+                    "homepage": "https://github.com/GrahamCampbell"
+                },
+                {
                     "name": "Michael Dowling",
                     "email": "mtdowling@gmail.com",
                     "homepage": "https://github.com/mtdowling"
+                },
+                {
+                    "name": "Jeremy Lindblom",
+                    "email": "jeremeamia@gmail.com",
+                    "homepage": "https://github.com/jeremeamia"
+                },
+                {
+                    "name": "George Mponos",
+                    "email": "gmponos@gmail.com",
+                    "homepage": "https://github.com/gmponos"
+                },
+                {
+                    "name": "Tobias Nyholm",
+                    "email": "tobias.nyholm@gmail.com",
+                    "homepage": "https://github.com/Nyholm"
+                },
+                {
+                    "name": "Márk Sági-Kazár",
+                    "email": "mark.sagikazar@gmail.com",
+                    "homepage": "https://github.com/sagikazarmark"
+                },
+                {
+                    "name": "Tobias Schultze",
+                    "email": "webmaster@tubo-world.de",
+                    "homepage": "https://github.com/Tobion"
                 }
             ],
             "description": "Guzzle is a PHP HTTP client library",
@@ -443,41 +558,59 @@
                 "rest",
                 "web service"
             ],
-            "time": "2018-04-22T15:46:56+00:00"
+            "support": {
+                "issues": "https://github.com/guzzle/guzzle/issues",
+                "source": "https://github.com/guzzle/guzzle/tree/6.5.8"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/GrahamCampbell",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/Nyholm",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/guzzlehttp/guzzle",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-06-20T22:16:07+00:00"
         },
         {
             "name": "guzzlehttp/promises",
-            "version": "v1.3.1",
+            "version": "1.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/promises.git",
-                "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646"
+                "reference": "fe752aedc9fd8fcca3fe7ad05d419d32998a06da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/a59da6cf61d80060647ff4d3eb2c03a2bc694646",
-                "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/fe752aedc9fd8fcca3fe7ad05d419d32998a06da",
+                "reference": "fe752aedc9fd8fcca3fe7ad05d419d32998a06da",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.0"
+                "php": ">=5.5"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.0"
+                "symfony/phpunit-bridge": "^4.4 || ^5.1"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.4-dev"
+                    "dev-master": "1.5-dev"
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "GuzzleHttp\\Promise\\": "src/"
-                },
                 "files": [
                     "src/functions_include.php"
-                ]
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\Promise\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -485,29 +618,62 @@
             ],
             "authors": [
                 {
+                    "name": "Graham Campbell",
+                    "email": "hello@gjcampbell.co.uk",
+                    "homepage": "https://github.com/GrahamCampbell"
+                },
+                {
                     "name": "Michael Dowling",
                     "email": "mtdowling@gmail.com",
                     "homepage": "https://github.com/mtdowling"
+                },
+                {
+                    "name": "Tobias Nyholm",
+                    "email": "tobias.nyholm@gmail.com",
+                    "homepage": "https://github.com/Nyholm"
+                },
+                {
+                    "name": "Tobias Schultze",
+                    "email": "webmaster@tubo-world.de",
+                    "homepage": "https://github.com/Tobion"
                 }
             ],
             "description": "Guzzle promises library",
             "keywords": [
                 "promise"
             ],
-            "time": "2016-12-20T10:07:11+00:00"
+            "support": {
+                "issues": "https://github.com/guzzle/promises/issues",
+                "source": "https://github.com/guzzle/promises/tree/1.5.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/GrahamCampbell",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/Nyholm",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/guzzlehttp/promises",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-10-22T20:56:57+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "1.6.1",
+            "version": "1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "239400de7a173fe9901b9ac7c06497751f00727a"
+                "reference": "e98e3e6d4f86621a9b75f623996e6bbdeb4b9318"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/239400de7a173fe9901b9ac7c06497751f00727a",
-                "reference": "239400de7a173fe9901b9ac7c06497751f00727a",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/e98e3e6d4f86621a9b75f623996e6bbdeb4b9318",
+                "reference": "e98e3e6d4f86621a9b75f623996e6bbdeb4b9318",
                 "shasum": ""
             },
             "require": {
@@ -520,24 +686,24 @@
             },
             "require-dev": {
                 "ext-zlib": "*",
-                "phpunit/phpunit": "~4.8.36 || ^5.7.27 || ^6.5.8"
+                "phpunit/phpunit": "~4.8.36 || ^5.7.27 || ^6.5.14 || ^7.5.20 || ^8.5.8 || ^9.3.10"
             },
             "suggest": {
-                "zendframework/zend-httphandlerrunner": "Emit PSR-7 responses"
+                "laminas/laminas-httphandlerrunner": "Emit PSR-7 responses"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.6-dev"
+                    "dev-master": "1.9-dev"
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "GuzzleHttp\\Psr7\\": "src/"
-                },
                 "files": [
                     "src/functions_include.php"
-                ]
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\Psr7\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -545,12 +711,33 @@
             ],
             "authors": [
                 {
+                    "name": "Graham Campbell",
+                    "email": "hello@gjcampbell.co.uk",
+                    "homepage": "https://github.com/GrahamCampbell"
+                },
+                {
                     "name": "Michael Dowling",
                     "email": "mtdowling@gmail.com",
                     "homepage": "https://github.com/mtdowling"
                 },
                 {
+                    "name": "George Mponos",
+                    "email": "gmponos@gmail.com",
+                    "homepage": "https://github.com/gmponos"
+                },
+                {
+                    "name": "Tobias Nyholm",
+                    "email": "tobias.nyholm@gmail.com",
+                    "homepage": "https://github.com/Nyholm"
+                },
+                {
+                    "name": "Márk Sági-Kazár",
+                    "email": "mark.sagikazar@gmail.com",
+                    "homepage": "https://github.com/sagikazarmark"
+                },
+                {
                     "name": "Tobias Schultze",
+                    "email": "webmaster@tubo-world.de",
                     "homepage": "https://github.com/Tobion"
                 }
             ],
@@ -565,7 +752,25 @@
                 "uri",
                 "url"
             ],
-            "time": "2019-07-01T23:21:34+00:00"
+            "support": {
+                "issues": "https://github.com/guzzle/psr7/issues",
+                "source": "https://github.com/guzzle/psr7/tree/1.9.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/GrahamCampbell",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/Nyholm",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/guzzlehttp/psr7",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-06-20T21:43:03+00:00"
         },
         {
             "name": "jakub-onderka/php-console-color",
@@ -948,71 +1153,44 @@
             "time": "2019-08-24T11:17:19+00:00"
         },
         {
-            "name": "microsoft/azure-storage-blob",
-            "version": "1.4.0",
+            "name": "microsoft/azure-storage",
+            "version": "v0.19.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Azure/azure-storage-blob-php.git",
-                "reference": "8310c2ecab488fa325db3dcf2f8723bbcfe58941"
+                "url": "https://github.com/Azure/azure-storage-php.git",
+                "reference": "e1702ae9e6194fa392b64a11737c5e3252d2c8e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Azure/azure-storage-blob-php/zipball/8310c2ecab488fa325db3dcf2f8723bbcfe58941",
-                "reference": "8310c2ecab488fa325db3dcf2f8723bbcfe58941",
-                "shasum": ""
-            },
-            "require": {
-                "microsoft/azure-storage-common": "~1.4",
-                "php": ">=5.6.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "MicrosoftAzure\\Storage\\Blob\\": "src/Blob"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Azure Storage PHP Client Library",
-                    "email": "dmsh@microsoft.com"
-                }
-            ],
-            "description": "This project provides a set of PHP client libraries that make it easy to access Microsoft Azure Storage Blob APIs.",
-            "keywords": [
-                "azure",
-                "blob",
-                "php",
-                "sdk",
-                "storage"
-            ],
-            "time": "2019-04-26T15:06:52+00:00"
-        },
-        {
-            "name": "microsoft/azure-storage-common",
-            "version": "1.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Azure/azure-storage-common-php.git",
-                "reference": "435adf4d09f0b34375f899b5627d2926bfe317e6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Azure/azure-storage-common-php/zipball/435adf4d09f0b34375f899b5627d2926bfe317e6",
-                "reference": "435adf4d09f0b34375f899b5627d2926bfe317e6",
+                "url": "https://api.github.com/repos/Azure/azure-storage-php/zipball/e1702ae9e6194fa392b64a11737c5e3252d2c8e6",
+                "reference": "e1702ae9e6194fa392b64a11737c5e3252d2c8e6",
                 "shasum": ""
             },
             "require": {
                 "guzzlehttp/guzzle": "~6.0",
-                "php": ">=5.6.0"
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "@stable",
+                "mikey179/vfsstream": "~1.6",
+                "pdepend/pdepend": "~2.2",
+                "phpdocumentor/phpdocumentor": "dev-master",
+                "phploc/phploc": "~2.1",
+                "phpmd/phpmd": "@stable",
+                "phpunit/phpunit": "~4.0",
+                "sebastian/phpcpd": "~2.0",
+                "squizlabs/php_codesniffer": "@stable",
+                "theseer/phpdox": "~0.8"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.10.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
-                    "MicrosoftAzure\\Storage\\Common\\": "src/Common"
+                    "MicrosoftAzure\\Storage\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1021,151 +1199,92 @@
             ],
             "authors": [
                 {
-                    "name": "Azure Storage PHP Client Library",
+                    "name": "Azure Storage PHP SDK",
                     "email": "dmsh@microsoft.com"
                 }
             ],
-            "description": "This project provides a set of common code shared by Azure Storage Blob, Table, Queue and File PHP client libraries.",
+            "description": "This project provides a set of PHP client libraries that make it easy to access Microsoft Azure storage APIs.",
             "keywords": [
                 "azure",
-                "common",
                 "php",
                 "sdk",
                 "storage"
             ],
-            "time": "2019-04-26T15:02:17+00:00"
+            "support": {
+                "issues": "https://github.com/Azure/azure-storage-php/issues",
+                "source": "https://github.com/Azure/azure-storage-php/tree/v0.19.1"
+            },
+            "abandoned": "microsoft/azure-storage-blob;microsoft/azure-storage-queue;microsoft/azure-storage-table;microsoft/azure-storage-file",
+            "time": "2017-09-25T08:35:45+00:00"
         },
         {
-            "name": "microsoft/azure-storage-file",
-            "version": "1.2.1",
+            "name": "microsoft/windowsazure",
+            "version": "v0.5.7",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Azure/azure-storage-file-php.git",
-                "reference": "e5e22e0cd61f303926f386f5c5eaab0447f8f4e4"
+                "url": "https://github.com/Azure/azure-sdk-for-php.git",
+                "reference": "498a386a351a5caefa8533bd9539f2bcfbff1c00"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Azure/azure-storage-file-php/zipball/e5e22e0cd61f303926f386f5c5eaab0447f8f4e4",
-                "reference": "e5e22e0cd61f303926f386f5c5eaab0447f8f4e4",
+                "url": "https://api.github.com/repos/Azure/azure-sdk-for-php/zipball/498a386a351a5caefa8533bd9539f2bcfbff1c00",
+                "reference": "498a386a351a5caefa8533bd9539f2bcfbff1c00",
                 "shasum": ""
             },
             "require": {
-                "microsoft/azure-storage-common": "~1.4",
-                "php": ">=5.6.0"
+                "firebase/php-jwt": "^4.0",
+                "guzzlehttp/guzzle": "^6.2",
+                "microsoft/azure-storage": "^0.19.1",
+                "pear/mail_mime": "^1.10",
+                "pear/net_url2": "^2.2",
+                "php": ">=5.6",
+                "zendframework/zend-mail": "^2.7",
+                "zendframework/zend-mime": "^2.6"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^1.12.2",
+                "mayflower/php-codebrowser": "^1.1",
+                "mikey179/vfsstream": "^1.6",
+                "pdepend/pdepend": "^2.2",
+                "phpdocumentor/phpdocumentor": "^2.8",
+                "phploc/phploc": "^2.1",
+                "phpmd/phpmd": "^2.4",
+                "phpunit/phpunit": "^4.8",
+                "sebastian/phpcpd": "^2.0",
+                "squizlabs/php_codesniffer": "^2.6"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.4-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
-                    "MicrosoftAzure\\Storage\\File\\": "src/File"
+                    "WindowsAzure\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "MIT"
+                "Apache-2.0"
             ],
             "authors": [
                 {
-                    "name": "Azure Storage PHP Client Library",
-                    "email": "dmsh@microsoft.com"
+                    "name": "Azure PHP SDK",
+                    "email": "azurephpsdk@microsoft.com"
                 }
             ],
-            "description": "This project provides a set of PHP client libraries that make it easy to access Microsoft Azure Storage File APIs.",
-            "keywords": [
-                "azure",
-                "file",
-                "php",
-                "sdk",
-                "storage"
-            ],
-            "time": "2019-04-26T15:14:26+00:00"
-        },
-        {
-            "name": "microsoft/azure-storage-queue",
-            "version": "1.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Azure/azure-storage-queue-php.git",
-                "reference": "c7ef31c640f8baa2aa3c1612d1d17be82a28b38f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Azure/azure-storage-queue-php/zipball/c7ef31c640f8baa2aa3c1612d1d17be82a28b38f",
-                "reference": "c7ef31c640f8baa2aa3c1612d1d17be82a28b38f",
-                "shasum": ""
-            },
-            "require": {
-                "microsoft/azure-storage-common": "~1.4",
-                "php": ">=5.6.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "MicrosoftAzure\\Storage\\Queue\\": "src/Queue"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Azure Storage PHP Client Library",
-                    "email": "dmsh@microsoft.com"
-                }
-            ],
-            "description": "This project provides a set of PHP client libraries that make it easy to access Microsoft Azure Storage Queue APIs.",
+            "description": "This project provides a set of PHP client libraries that make it easy to access Windows Azure tables, blobs, queues, service runtime and service management APIs.",
             "keywords": [
                 "azure",
                 "php",
-                "queue",
-                "sdk",
-                "storage"
+                "sdk"
             ],
-            "time": "2019-04-26T15:12:13+00:00"
-        },
-        {
-            "name": "microsoft/azure-storage-table",
-            "version": "1.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Azure/azure-storage-table-php.git",
-                "reference": "d2a172d03870c1ab0f08994c5b830845f3fe51c6"
+            "support": {
+                "issues": "https://github.com/Azure/azure-sdk-for-php/issues",
+                "source": "https://github.com/Azure/azure-sdk-for-php/tree/v0.5.7"
             },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Azure/azure-storage-table-php/zipball/d2a172d03870c1ab0f08994c5b830845f3fe51c6",
-                "reference": "d2a172d03870c1ab0f08994c5b830845f3fe51c6",
-                "shasum": ""
-            },
-            "require": {
-                "microsoft/azure-storage-common": "~1.4",
-                "php": ">=5.6.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "MicrosoftAzure\\Storage\\Table\\": "src/Table"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Azure Storage PHP Client Library",
-                    "email": "dmsh@microsoft.com"
-                }
-            ],
-            "description": "This project provides a set of PHP client libraries that make it easy to access Microsoft Azure Storage Table APIs.",
-            "keywords": [
-                "azure",
-                "php",
-                "sdk",
-                "storage",
-                "table"
-            ],
-            "time": "2019-04-26T15:10:17+00:00"
+            "time": "2017-11-27T23:49:28+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -1470,7 +1589,289 @@
                 "pseudorandom",
                 "random"
             ],
+            "support": {
+                "email": "info@paragonie.com",
+                "issues": "https://github.com/paragonie/random_compat/issues",
+                "source": "https://github.com/paragonie/random_compat"
+            },
             "time": "2018-07-02T15:55:56+00:00"
+        },
+        {
+            "name": "pear/console_getopt",
+            "version": "v1.4.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pear/Console_Getopt.git",
+                "reference": "a41f8d3e668987609178c7c4a9fe48fecac53fa0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pear/Console_Getopt/zipball/a41f8d3e668987609178c7c4a9fe48fecac53fa0",
+                "reference": "a41f8d3e668987609178c7c4a9fe48fecac53fa0",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Console": "./"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                "./"
+            ],
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Andrei Zmievski",
+                    "email": "andrei@php.net",
+                    "role": "Lead"
+                },
+                {
+                    "name": "Stig Bakken",
+                    "email": "stig@php.net",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Greg Beaver",
+                    "email": "cellog@php.net",
+                    "role": "Helper"
+                }
+            ],
+            "description": "More info available on: http://pear.php.net/package/Console_Getopt",
+            "support": {
+                "issues": "http://pear.php.net/bugs/search.php?cmd=display&package_name[]=Console_Getopt",
+                "source": "https://github.com/pear/Console_Getopt"
+            },
+            "time": "2019-11-20T18:27:48+00:00"
+        },
+        {
+            "name": "pear/mail_mime",
+            "version": "1.10.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pear/Mail_Mime.git",
+                "reference": "d4fb9ce61201593d0f8c6db629c45e29c3409c14"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pear/Mail_Mime/zipball/d4fb9ce61201593d0f8c6db629c45e29c3409c14",
+                "reference": "d4fb9ce61201593d0f8c6db629c45e29c3409c14",
+                "shasum": ""
+            },
+            "require": {
+                "pear/pear-core-minimal": "*",
+                "php": ">=5.2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Mail": "./"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                "./"
+            ],
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Cipriano Groenendal",
+                    "email": "cipri@php.net",
+                    "role": "Lead"
+                },
+                {
+                    "name": "Aleksander Machniak",
+                    "email": "alec@php.net",
+                    "role": "Lead"
+                }
+            ],
+            "description": "Mail_Mime provides classes to create MIME messages",
+            "homepage": "http://pear.php.net/package/Mail_Mime",
+            "support": {
+                "issues": "http://pear.php.net/bugs/search.php?cmd=display&package_name[]=Mail_Mime",
+                "source": "https://github.com/pear/Mail_Mime"
+            },
+            "time": "2021-09-05T08:42:45+00:00"
+        },
+        {
+            "name": "pear/net_url2",
+            "version": "v2.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pear/Net_URL2.git",
+                "reference": "07fd055820dbf466ee3990abe96d0e40a8791f9d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pear/Net_URL2/zipball/07fd055820dbf466ee3990abe96d0e40a8791f9d",
+                "reference": "07fd055820dbf466ee3990abe96d0e40a8791f9d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.1.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=3.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.2.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "Net/URL2.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                "./"
+            ],
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "David Coallier",
+                    "email": "davidc@php.net"
+                },
+                {
+                    "name": "Tom Klingenberg",
+                    "email": "tkli@php.net"
+                },
+                {
+                    "name": "Christian Schmidt",
+                    "email": "chmidt@php.net"
+                }
+            ],
+            "description": "Class for parsing and handling URL. Provides parsing of URLs into their constituent parts (scheme, host, path etc.), URL generation, and resolving of relative URLs.",
+            "homepage": "https://github.com/pear/Net_URL2",
+            "keywords": [
+                "PEAR",
+                "net",
+                "networking",
+                "rfc3986",
+                "uri",
+                "url"
+            ],
+            "support": {
+                "issues": "https://pear.php.net/bugs/search.php?cmd=display&package_name[]=Net_URL2",
+                "source": "https://github.com/pear/Net_URL2"
+            },
+            "time": "2017-08-25T06:16:11+00:00"
+        },
+        {
+            "name": "pear/pear-core-minimal",
+            "version": "v1.10.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pear/pear-core-minimal.git",
+                "reference": "68d0d32ada737153b7e93b8d3c710ebe70ac867d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pear/pear-core-minimal/zipball/68d0d32ada737153b7e93b8d3c710ebe70ac867d",
+                "reference": "68d0d32ada737153b7e93b8d3c710ebe70ac867d",
+                "shasum": ""
+            },
+            "require": {
+                "pear/console_getopt": "~1.4",
+                "pear/pear_exception": "~1.0"
+            },
+            "replace": {
+                "rsky/pear-core-min": "self.version"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                "src/"
+            ],
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Weiske",
+                    "email": "cweiske@php.net",
+                    "role": "Lead"
+                }
+            ],
+            "description": "Minimal set of PEAR core files to be used as composer dependency",
+            "support": {
+                "issues": "http://pear.php.net/bugs/search.php?cmd=display&package_name[]=PEAR",
+                "source": "https://github.com/pear/pear-core-minimal"
+            },
+            "time": "2021-08-10T22:31:03+00:00"
+        },
+        {
+            "name": "pear/pear_exception",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pear/PEAR_Exception.git",
+                "reference": "b14fbe2ddb0b9f94f5b24cf08783d599f776fff0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pear/PEAR_Exception/zipball/b14fbe2ddb0b9f94f5b24cf08783d599f776fff0",
+                "reference": "b14fbe2ddb0b9f94f5b24cf08783d599f776fff0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "<9"
+            },
+            "type": "class",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "PEAR/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                "."
+            ],
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Helgi Thormar",
+                    "email": "dufuz@php.net"
+                },
+                {
+                    "name": "Greg Beaver",
+                    "email": "cellog@php.net"
+                }
+            ],
+            "description": "The PEAR Exception base class.",
+            "homepage": "https://github.com/pear/PEAR_Exception",
+            "keywords": [
+                "exception"
+            ],
+            "support": {
+                "issues": "http://pear.php.net/bugs/search.php?cmd=display&package_name[]=PEAR_Exception",
+                "source": "https://github.com/pear/PEAR_Exception"
+            },
+            "time": "2021-03-21T15:43:46+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -1524,27 +1925,22 @@
         },
         {
             "name": "psr/container",
-            "version": "1.0.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/container.git",
-                "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f"
+                "reference": "8622567409010282b7aeebe4bb841fe98b58dcaf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/container/zipball/b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
-                "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
+                "url": "https://api.github.com/repos/php-fig/container/zipball/8622567409010282b7aeebe4bb841fe98b58dcaf",
+                "reference": "8622567409010282b7aeebe4bb841fe98b58dcaf",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0"
+                "php": ">=7.2.0"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Psr\\Container\\": "src/"
@@ -1557,7 +1953,7 @@
             "authors": [
                 {
                     "name": "PHP-FIG",
-                    "homepage": "http://www.php-fig.org/"
+                    "homepage": "https://www.php-fig.org/"
                 }
             ],
             "description": "Common Container Interface (PHP FIG PSR-11)",
@@ -1569,7 +1965,11 @@
                 "container-interop",
                 "psr"
             ],
-            "time": "2017-02-14T16:28:37+00:00"
+            "support": {
+                "issues": "https://github.com/php-fig/container/issues",
+                "source": "https://github.com/php-fig/container/tree/1.1.1"
+            },
+            "time": "2021-03-05T17:36:06+00:00"
         },
         {
             "name": "psr/http-message",
@@ -1619,6 +2019,9 @@
                 "request",
                 "response"
             ],
+            "support": {
+                "source": "https://github.com/php-fig/http-message/tree/master"
+            },
             "time": "2016-08-06T14:39:51+00:00"
         },
         {
@@ -1828,6 +2231,10 @@
                 }
             ],
             "description": "A polyfill for getallheaders.",
+            "support": {
+                "issues": "https://github.com/ralouphie/getallheaders/issues",
+                "source": "https://github.com/ralouphie/getallheaders/tree/develop"
+            },
             "time": "2019-03-08T08:55:37+00:00"
         },
         {
@@ -2660,22 +3067,22 @@
         },
         {
             "name": "symfony/polyfill-intl-idn",
-            "version": "v1.12.0",
+            "version": "v1.26.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-idn.git",
-                "reference": "6af626ae6fa37d396dc90a399c0ff08e5cfc45b2"
+                "reference": "59a8d271f00dd0e4c2e518104cc7963f655a1aa8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-intl-idn/zipball/6af626ae6fa37d396dc90a399c0ff08e5cfc45b2",
-                "reference": "6af626ae6fa37d396dc90a399c0ff08e5cfc45b2",
+                "url": "https://api.github.com/repos/symfony/polyfill-intl-idn/zipball/59a8d271f00dd0e4c2e518104cc7963f655a1aa8",
+                "reference": "59a8d271f00dd0e4c2e518104cc7963f655a1aa8",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3",
-                "symfony/polyfill-mbstring": "^1.3",
-                "symfony/polyfill-php72": "^1.9"
+                "php": ">=7.1",
+                "symfony/polyfill-intl-normalizer": "^1.10",
+                "symfony/polyfill-php72": "^1.10"
             },
             "suggest": {
                 "ext-intl": "For best performance"
@@ -2683,16 +3090,20 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.12-dev"
+                    "dev-main": "1.26-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Intl\\Idn\\": ""
-                },
                 "files": [
                     "bootstrap.php"
-                ]
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Intl\\Idn\\": ""
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -2702,6 +3113,10 @@
                 {
                     "name": "Laurent Bassin",
                     "email": "laurent@bassin.info"
+                },
+                {
+                    "name": "Trevor Rowbotham",
+                    "email": "trevor.rowbotham@pm.me"
                 },
                 {
                     "name": "Symfony Community",
@@ -2718,24 +3133,128 @@
                 "portable",
                 "shim"
             ],
-            "time": "2019-08-06T08:03:45+00:00"
+            "support": {
+                "source": "https://github.com/symfony/polyfill-intl-idn/tree/v1.26.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-05-24T11:49:31+00:00"
         },
         {
-            "name": "symfony/polyfill-mbstring",
-            "version": "v1.12.0",
+            "name": "symfony/polyfill-intl-normalizer",
+            "version": "v1.26.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "b42a2f66e8f1b15ccf25652c3424265923eb4f17"
+                "url": "https://github.com/symfony/polyfill-intl-normalizer.git",
+                "reference": "219aa369ceff116e673852dce47c3a41794c14bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/b42a2f66e8f1b15ccf25652c3424265923eb4f17",
-                "reference": "b42a2f66e8f1b15ccf25652c3424265923eb4f17",
+                "url": "https://api.github.com/repos/symfony/polyfill-intl-normalizer/zipball/219aa369ceff116e673852dce47c3a41794c14bd",
+                "reference": "219aa369ceff116e673852dce47c3a41794c14bd",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3"
+                "php": ">=7.1"
+            },
+            "suggest": {
+                "ext-intl": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.26-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Intl\\Normalizer\\": ""
+                },
+                "classmap": [
+                    "Resources/stubs"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for intl's Normalizer class and related functions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "intl",
+                "normalizer",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-intl-normalizer/tree/v1.26.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-05-24T11:49:31+00:00"
+        },
+        {
+            "name": "symfony/polyfill-mbstring",
+            "version": "v1.26.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-mbstring.git",
+                "reference": "9344f9cb97f3b19424af1a21a3b0e75b0a7d8d7e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/9344f9cb97f3b19424af1a21a3b0e75b0a7d8d7e",
+                "reference": "9344f9cb97f3b19424af1a21a3b0e75b0a7d8d7e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "provide": {
+                "ext-mbstring": "*"
             },
             "suggest": {
                 "ext-mbstring": "For best performance"
@@ -2743,16 +3262,20 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.12-dev"
+                    "dev-main": "1.26-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Mbstring\\": ""
-                },
                 "files": [
                     "bootstrap.php"
-                ]
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Mbstring\\": ""
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -2777,38 +3300,59 @@
                 "portable",
                 "shim"
             ],
-            "time": "2019-08-06T08:03:45+00:00"
+            "support": {
+                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.26.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-05-24T11:49:31+00:00"
         },
         {
             "name": "symfony/polyfill-php72",
-            "version": "v1.12.0",
+            "version": "v1.26.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php72.git",
-                "reference": "04ce3335667451138df4307d6a9b61565560199e"
+                "reference": "bf44a9fd41feaac72b074de600314a93e2ae78e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php72/zipball/04ce3335667451138df4307d6a9b61565560199e",
-                "reference": "04ce3335667451138df4307d6a9b61565560199e",
+                "url": "https://api.github.com/repos/symfony/polyfill-php72/zipball/bf44a9fd41feaac72b074de600314a93e2ae78e2",
+                "reference": "bf44a9fd41feaac72b074de600314a93e2ae78e2",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3"
+                "php": ">=7.1"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.12-dev"
+                    "dev-main": "1.26-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Php72\\": ""
-                },
                 "files": [
                     "bootstrap.php"
-                ]
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php72\\": ""
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -2832,7 +3376,24 @@
                 "portable",
                 "shim"
             ],
-            "time": "2019-08-06T08:03:45+00:00"
+            "support": {
+                "source": "https://github.com/symfony/polyfill-php72/tree/v1.26.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-05-24T11:49:31+00:00"
         },
         {
             "name": "symfony/polyfill-php73",
@@ -3332,6 +3893,56 @@
             "time": "2017-11-27T11:13:29+00:00"
         },
         {
+            "name": "true/punycode",
+            "version": "v2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/true/php-punycode.git",
+                "reference": "a4d0c11a36dd7f4e7cd7096076cab6d3378a071e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/true/php-punycode/zipball/a4d0c11a36dd7f4e7cd7096076cab6d3378a071e",
+                "reference": "a4d0c11a36dd7f4e7cd7096076cab6d3378a071e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "symfony/polyfill-mbstring": "^1.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.7",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "TrueBV\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Renan Gonçalves",
+                    "email": "renan.saddam@gmail.com"
+                }
+            ],
+            "description": "A Bootstring encoding of Unicode for Internationalized Domain Names in Applications (IDNA)",
+            "homepage": "https://github.com/true/php-punycode",
+            "keywords": [
+                "idna",
+                "punycode"
+            ],
+            "support": {
+                "issues": "https://github.com/true/php-punycode/issues",
+                "source": "https://github.com/true/php-punycode/tree/master"
+            },
+            "time": "2016-11-16T10:37:54+00:00"
+        },
+        {
             "name": "vlucas/phpdotenv",
             "version": "v3.6.0",
             "source": {
@@ -3387,6 +3998,329 @@
                 "environment"
             ],
             "time": "2019-09-10T21:37:39+00:00"
+        },
+        {
+            "name": "zendframework/zend-loader",
+            "version": "2.6.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/zend-loader.git",
+                "reference": "91da574d29b58547385b2298c020b257310898c6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/zend-loader/zipball/91da574d29b58547385b2298c020b257310898c6",
+                "reference": "91da574d29b58547385b2298c020b257310898c6",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6 || ^7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7.27 || ^6.5.8 || ^7.1.4",
+                "zendframework/zend-coding-standard": "~1.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.6.x-dev",
+                    "dev-develop": "2.7.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Zend\\Loader\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Autoloading and plugin loading strategies",
+            "keywords": [
+                "ZendFramework",
+                "loader",
+                "zf"
+            ],
+            "support": {
+                "chat": "https://zendframework-slack.herokuapp.com",
+                "docs": "https://docs.zendframework.com/zend-loader/",
+                "forum": "https://discourse.zendframework.com/c/questions/components",
+                "issues": "https://github.com/zendframework/zend-loader/issues",
+                "rss": "https://github.com/zendframework/zend-loader/releases.atom",
+                "source": "https://github.com/zendframework/zend-loader"
+            },
+            "abandoned": "laminas/laminas-loader",
+            "time": "2019-09-04T19:38:14+00:00"
+        },
+        {
+            "name": "zendframework/zend-mail",
+            "version": "2.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/zend-mail.git",
+                "reference": "d7beb63d5f7144a21ac100072c453e63860cdab8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/zend-mail/zipball/d7beb63d5f7144a21ac100072c453e63860cdab8",
+                "reference": "d7beb63d5f7144a21ac100072c453e63860cdab8",
+                "shasum": ""
+            },
+            "require": {
+                "ext-iconv": "*",
+                "php": "^5.6 || ^7.0",
+                "true/punycode": "^2.1",
+                "zendframework/zend-loader": "^2.5",
+                "zendframework/zend-mime": "^2.5",
+                "zendframework/zend-stdlib": "^2.7 || ^3.0",
+                "zendframework/zend-validator": "^2.10.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7.25 || ^6.4.4 || ^7.1.4",
+                "zendframework/zend-coding-standard": "~1.0.0",
+                "zendframework/zend-config": "^2.6",
+                "zendframework/zend-crypt": "^2.6 || ^3.0",
+                "zendframework/zend-servicemanager": "^2.7.10 || ^3.3.1"
+            },
+            "suggest": {
+                "zendframework/zend-crypt": "Crammd5 support in SMTP Auth",
+                "zendframework/zend-servicemanager": "^2.7.10 || ^3.3.1 when using SMTP to deliver messages"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.10.x-dev",
+                    "dev-develop": "2.11.x-dev"
+                },
+                "zf": {
+                    "component": "Zend\\Mail",
+                    "config-provider": "Zend\\Mail\\ConfigProvider"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Zend\\Mail\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Provides generalized functionality to compose and send both text and MIME-compliant multipart e-mail messages",
+            "keywords": [
+                "ZendFramework",
+                "mail",
+                "zf"
+            ],
+            "support": {
+                "chat": "https://zendframework-slack.herokuapp.com",
+                "docs": "https://docs.zendframework.com/zend-mail/",
+                "forum": "https://discourse.zendframework.com/c/questions/components",
+                "issues": "https://github.com/zendframework/zend-mail/issues",
+                "rss": "https://github.com/zendframework/zend-mail/releases.atom",
+                "source": "https://github.com/zendframework/zend-mail"
+            },
+            "abandoned": "laminas/laminas-mail",
+            "time": "2018-06-07T13:37:07+00:00"
+        },
+        {
+            "name": "zendframework/zend-mime",
+            "version": "2.7.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/zend-mime.git",
+                "reference": "c91e0350be53cc9d29be15563445eec3b269d7c1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/zend-mime/zipball/c91e0350be53cc9d29be15563445eec3b269d7c1",
+                "reference": "c91e0350be53cc9d29be15563445eec3b269d7c1",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6 || ^7.0",
+                "zendframework/zend-stdlib": "^2.7 || ^3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7.21 || ^6.3",
+                "zendframework/zend-coding-standard": "~1.0.0",
+                "zendframework/zend-mail": "^2.6"
+            },
+            "suggest": {
+                "zendframework/zend-mail": "Zend\\Mail component"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.7.x-dev",
+                    "dev-develop": "2.8.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Zend\\Mime\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Create and parse MIME messages and parts",
+            "keywords": [
+                "ZendFramework",
+                "mime",
+                "zf"
+            ],
+            "support": {
+                "chat": "https://zendframework-slack.herokuapp.com",
+                "docs": "https://docs.zendframework.com/zend-mime/",
+                "forum": "https://discourse.zendframework.com/c/questions/components",
+                "issues": "https://github.com/zendframework/zend-mime/issues",
+                "rss": "https://github.com/zendframework/zend-mime/releases.atom",
+                "source": "https://github.com/zendframework/zend-mime"
+            },
+            "abandoned": "laminas/laminas-mime",
+            "time": "2019-10-16T19:30:37+00:00"
+        },
+        {
+            "name": "zendframework/zend-stdlib",
+            "version": "3.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/zend-stdlib.git",
+                "reference": "66536006722aff9e62d1b331025089b7ec71c065"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/zend-stdlib/zipball/66536006722aff9e62d1b331025089b7ec71c065",
+                "reference": "66536006722aff9e62d1b331025089b7ec71c065",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6 || ^7.0"
+            },
+            "require-dev": {
+                "phpbench/phpbench": "^0.13",
+                "phpunit/phpunit": "^5.7.27 || ^6.5.8 || ^7.1.2",
+                "zendframework/zend-coding-standard": "~1.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.2.x-dev",
+                    "dev-develop": "3.3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Zend\\Stdlib\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "SPL extensions, array utilities, error handlers, and more",
+            "keywords": [
+                "ZendFramework",
+                "stdlib",
+                "zf"
+            ],
+            "support": {
+                "docs": "https://docs.zendframework.com/zend-stdlib/",
+                "forum": "https://discourse.zendframework.com/c/questions/components",
+                "issues": "https://github.com/zendframework/zend-stdlib/issues",
+                "rss": "https://github.com/zendframework/zend-stdlib/releases.atom",
+                "slack": "https://zendframework-slack.herokuapp.com",
+                "source": "https://github.com/zendframework/zend-stdlib"
+            },
+            "abandoned": "laminas/laminas-stdlib",
+            "time": "2018-08-28T21:34:05+00:00"
+        },
+        {
+            "name": "zendframework/zend-validator",
+            "version": "2.13.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/zend-validator.git",
+                "reference": "b54acef1f407741c5347f2a97f899ab21f2229ef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/zend-validator/zipball/b54acef1f407741c5347f2a97f899ab21f2229ef",
+                "reference": "b54acef1f407741c5347f2a97f899ab21f2229ef",
+                "shasum": ""
+            },
+            "require": {
+                "container-interop/container-interop": "^1.1",
+                "php": "^7.1",
+                "zendframework/zend-stdlib": "^3.2.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.0.8 || ^5.7.15",
+                "psr/http-client": "^1.0",
+                "psr/http-factory": "^1.0",
+                "psr/http-message": "^1.0",
+                "zendframework/zend-cache": "^2.6.1",
+                "zendframework/zend-coding-standard": "~1.0.0",
+                "zendframework/zend-config": "^2.6",
+                "zendframework/zend-db": "^2.7",
+                "zendframework/zend-filter": "^2.6",
+                "zendframework/zend-http": "^2.5.4",
+                "zendframework/zend-i18n": "^2.6",
+                "zendframework/zend-math": "^2.6",
+                "zendframework/zend-servicemanager": "^2.7.5 || ^3.0.3",
+                "zendframework/zend-session": "^2.8",
+                "zendframework/zend-uri": "^2.5"
+            },
+            "suggest": {
+                "psr/http-message": "psr/http-message, required when validating PSR-7 UploadedFileInterface instances via the Upload and UploadFile validators",
+                "zendframework/zend-db": "Zend\\Db component, required by the (No)RecordExists validator",
+                "zendframework/zend-filter": "Zend\\Filter component, required by the Digits validator",
+                "zendframework/zend-i18n": "Zend\\I18n component to allow translation of validation error messages",
+                "zendframework/zend-i18n-resources": "Translations of validator messages",
+                "zendframework/zend-math": "Zend\\Math component, required by the Csrf validator",
+                "zendframework/zend-servicemanager": "Zend\\ServiceManager component to allow using the ValidatorPluginManager and validator chains",
+                "zendframework/zend-session": "Zend\\Session component, ^2.8; required by the Csrf validator",
+                "zendframework/zend-uri": "Zend\\Uri component, required by the Uri and Sitemap\\Loc validators"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.13.x-dev",
+                    "dev-develop": "2.14.x-dev"
+                },
+                "zf": {
+                    "component": "Zend\\Validator",
+                    "config-provider": "Zend\\Validator\\ConfigProvider"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Zend\\Validator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Validation classes for a wide range of domains, and the ability to chain validators to create complex validation criteria",
+            "keywords": [
+                "ZendFramework",
+                "validator",
+                "zf"
+            ],
+            "support": {
+                "chat": "https://zendframework-slack.herokuapp.com",
+                "docs": "https://docs.zendframework.com/zend-validator/",
+                "forum": "https://discourse.zendframework.com/c/questions/components",
+                "issues": "https://github.com/zendframework/zend-validator/issues",
+                "rss": "https://github.com/zendframework/zend-validator/releases.atom",
+                "source": "https://github.com/zendframework/zend-validator"
+            },
+            "abandoned": "laminas/laminas-validator",
+            "time": "2019-12-28T04:07:18+00:00"
         }
     ],
     "packages-dev": [
@@ -5379,5 +6313,6 @@
     "platform": {
         "php": "^7.2"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
 }
